@@ -80,9 +80,9 @@ export function StenonDetail() {
       <SiteHeader />
 
       {/* Back Button */}
-      <section className="px-6 py-4 sm:px-8">
+      <section className="px-6 py-0 sm:px-8">
         <div className="mx-auto max-w-6xl">
-          <Link href="/products" className="inline-flex items-center gap-2 text-emerald-700 hover:text-emerald-800 transition-colors">
+          <Link href="/products" className="inline-flex items-center gap-2 text-emerald-700 hover:text-emerald-800 transition-colors py-4">
             <ArrowLeft className="size-4" />
             Назад към продуктите
           </Link>
