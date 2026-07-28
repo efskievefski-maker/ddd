@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { CtaButton } from "@/components/cta-button"
+import { siteConfig } from "@/lib/site-config"
 
 export function Hero() {
   return (
@@ -15,11 +16,13 @@ export function Hero() {
             TerraScan Pro поставя професионалния анализ на почвата в дланта на ръката ви. Сканирайте и получете препоръки за минути как да подобрите вашата почва.
           </p>
 
-          <div className="flex flex-wrap items-center gap-4 pt-2">
-            <CtaButton source="hero-primary" size="lg" showArrow>
-              Вземи TerraScan Pro
-            </CtaButton>
-          </div>
+          {siteConfig.showQuoteButtons && (
+            <div className="flex flex-wrap items-center gap-4 pt-2">
+              <CtaButton source="hero-primary" size="lg" showArrow>
+                Вземи TerraScan Pro
+              </CtaButton>
+            </div>
+          )}
         </div>
 
         {/* Right: product image */}

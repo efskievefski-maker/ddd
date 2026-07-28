@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, Droplets, Cloud, Sun, Leaf } from 'lucide-react'
 import { SiteHeader } from '@/components/site-header'
+import { siteConfig } from '@/lib/site-config'
 
 export function LibeliumDetail() {
   const [formData, setFormData] = useState({
@@ -161,7 +162,7 @@ export function LibeliumDetail() {
           <div className="grid gap-8 md:grid-cols-2">
             <div>
               <h4 className="text-xl font-bold text-stone-900 mb-4">
-                Гъвкава конфигурация за всяка култура
+                Гъвкава конфигурация за всяка ��ултура
               </h4>
               <p className="text-stone-700 leading-relaxed">
                 Една система може да бъде конфигурирана според конкретната култура, терен и бизнес цел. Вместо да инвестирате в напълно ново решение при всяка промяна, можете да добавяте или заменяте сензори чрез защитени конектори.
@@ -212,6 +213,7 @@ export function LibeliumDetail() {
       </section>
 
       {/* Order Form Section */}
+      {siteConfig.showQuoteButtons && (
       <section className="px-6 py-16 sm:px-8 bg-stone-50">
         <div className="mx-auto max-w-3xl">
           <div className="mb-12 text-center">
@@ -270,6 +272,7 @@ export function LibeliumDetail() {
           </form>
         </div>
       </section>
+      )}
     </div>
   )
 }

@@ -174,6 +174,7 @@ export function VerisDetail() {
       </section>
 
       {/* Order Form Section */}
+      {siteConfig.showQuoteButtons && (
       <section className="px-6 py-20 sm:px-8">
         <div className="mx-auto max-w-3xl">
           <div className="rounded-2xl bg-white p-8 border border-stone-200 shadow-lg">
@@ -234,6 +235,7 @@ export function VerisDetail() {
           </div>
         </div>
       </section>
+      )}
     </div>
   )
 }

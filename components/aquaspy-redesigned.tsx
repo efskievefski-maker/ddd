@@ -190,6 +190,7 @@ export function AquaSpyRedesigned() {
       </section>
 
       {/* Order Form Section */}
+      {siteConfig.showQuoteButtons && (
       <section className="px-6 py-20 sm:px-8 bg-gradient-to-br from-emerald-50 to-stone-50">
         <div className="mx-auto max-w-2xl">
           <div className="rounded-2xl border border-emerald-200 bg-white p-8 sm:p-12 shadow-lg">
@@ -243,7 +244,7 @@ export function AquaSpyRedesigned() {
                 </div>
                 <div>
                   <label className="block text-sm font-semibold text-stone-700 mb-2">
-                    Забележка / Запитване
+                    Забележка / Запит��ане
                   </label>
                   <textarea
                     name="notes"
@@ -266,6 +267,7 @@ export function AquaSpyRedesigned() {
           </div>
         </div>
       </section>
+      )}
     </div>
   )
 }

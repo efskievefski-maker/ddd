@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { Leaf } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { CtaButton } from "@/components/cta-button"
+import { siteConfig } from "@/lib/site-config"
 
 const NAV_LINKS = [
   { label: "Особености", href: "#features" },
@@ -74,9 +75,11 @@ export function SiteHeader() {
             ))}
           </nav>
 
-          <CtaButton source="header" className="h-9 px-5">
-            Поръчай сега
-          </CtaButton>
+          {siteConfig.showQuoteButtons && (
+            <CtaButton source="header" className="h-9 px-5">
+              Поръчай сега
+            </CtaButton>
+          )}
         </div>
       </div>
     </header>
