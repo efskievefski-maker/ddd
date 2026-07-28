@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, Droplets, Thermometer, Zap, Gauge, Activity, TrendingUp, Sprout, Cpu, BarChart3 } from 'lucide-react'
 import { SiteHeader } from '@/components/site-header'
+import { siteConfig } from '@/lib/site-config'
 
 export function VertexV4Redesigned() {
   const [formData, setFormData] = useState({

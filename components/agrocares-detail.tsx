@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, Leaf, Droplets, Zap, Gauge, Activity, TrendingUp } from 'lucide-react'
 import { SiteHeader } from '@/components/site-header'
+import { siteConfig } from '@/lib/site-config'
 
 export function AgrocaresDetail() {
   const [formData, setFormData] = useState({
@@ -203,7 +204,7 @@ export function AgrocaresDetail() {
                     value={formData.name}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all"
-                    placeholder="Вашето име"
+                    placeholder="Ваш��то име"
                     required
                   />
                 </div>
