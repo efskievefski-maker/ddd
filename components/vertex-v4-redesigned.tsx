@@ -190,6 +190,7 @@ export function VertexV4Redesigned() {
       </section>
 
       {/* Order Form Section */}
+      {siteConfig.showQuoteButtons && (
       <section className="px-6 py-20 sm:px-8 bg-gradient-to-br from-emerald-50 to-stone-50">
         <div className="mx-auto max-w-2xl">
           <div className="rounded-2xl border border-emerald-200 bg-white p-8 sm:p-12 shadow-lg">
@@ -266,6 +267,7 @@ export function VertexV4Redesigned() {
           </div>
         </div>
       </section>
+      )}
     </div>
   )
 }

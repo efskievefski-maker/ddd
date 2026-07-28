@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, Sprout, Cpu, BarChart3, MapPin, Cloud, FileText } from 'lucide-react'
 import { Product, iconMap } from '@/lib/products-data'
+import { siteConfig } from '@/lib/site-config'
 
 interface ProductDetailProps {
   product: Product
@@ -157,6 +158,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
       </section>
 
       {/* Order Form Section - At Bottom */}
+      {siteConfig.showQuoteButtons && (
       <section className="px-6 py-20 sm:px-8 bg-gradient-to-br from-emerald-50 to-stone-50">
         <div className="mx-auto max-w-2xl">
           <div className="rounded-2xl border border-emerald-200 bg-white p-8 sm:p-12 shadow-lg">
@@ -233,6 +235,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
           </div>
         </div>
       </section>
+      )}
     </div>
   )
 }

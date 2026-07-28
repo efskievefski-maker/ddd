@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, Droplets, Leaf, Gauge, Activity, Zap } from 'lucide-react'
 import { SiteHeader } from '@/components/site-header'
+import { siteConfig } from '@/lib/site-config'
 
 export function SoilOptixDetail() {
   const [formData, setFormData] = useState({
@@ -160,6 +161,7 @@ export function SoilOptixDetail() {
       </section>
 
       {/* Order Form Section */}
+      {siteConfig.showQuoteButtons && (
       <section className="px-6 py-20 sm:px-8">
         <div className="mx-auto max-w-3xl">
           <div className="rounded-2xl bg-white border border-stone-200 p-8 shadow-lg">
@@ -243,6 +245,7 @@ export function SoilOptixDetail() {
           </div>
         </div>
       </section>
+      )}
     </div>
   )
 }

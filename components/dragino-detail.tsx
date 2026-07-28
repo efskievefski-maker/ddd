@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, Sprout, Cpu, BarChart3, TestTubes } from 'lucide-react'
 import { SiteHeader } from '@/components/site-header'
+import { siteConfig } from '@/lib/site-config'
 
 export function DraginoDetail() {
   const [formData, setFormData] = useState({
@@ -188,6 +189,7 @@ export function DraginoDetail() {
       </section>
 
       {/* Order Form Section */}
+      {siteConfig.showQuoteButtons && (
       <section className="px-6 py-20 sm:px-8 bg-gradient-to-br from-emerald-50 to-stone-50">
         <div className="mx-auto max-w-3xl">
           <div className="rounded-2xl border border-emerald-200 bg-white p-8 sm:p-12 shadow-lg">
@@ -263,6 +265,7 @@ export function DraginoDetail() {
           </div>
         </div>
       </section>
+      )}
     </div>
   )
 }

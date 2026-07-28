@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, Droplets, Thermometer, Zap, Wind } from 'lucide-react'
 import { SiteHeader } from '@/components/site-header'
+import { siteConfig } from '@/lib/site-config'
 
 export function SoilScoutDetail() {
   const [formData, setFormData] = useState({
@@ -182,6 +183,7 @@ export function SoilScoutDetail() {
       </section>
 
       {/* Order Form Section */}
+      {siteConfig.showQuoteButtons && (
       <section className="px-6 py-16 sm:px-8 bg-white">
         <div className="mx-auto max-w-3xl">
           <div className="mb-12 text-center">
@@ -240,6 +242,7 @@ export function SoilScoutDetail() {
           </form>
         </div>
       </section>
+      )}
     </div>
   )
 }
