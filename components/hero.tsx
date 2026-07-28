@@ -28,14 +28,6 @@ export function Hero() {
         {/* Right: product image */}
         <div className="relative flex justify-center">
           <div className="absolute inset-0 -z-10 mx-auto h-72 w-72 self-center rounded-full bg-primary/5 blur-2xl lg:h-96 lg:w-96" />
-          <Image
-            src="/images/scanner-hero.png"
-            alt="TerraScan Pro handheld soil scanner"
-            width={520}
-            height={520}
-            priority
-            className="h-auto w-full max-w-md drop-shadow-xl"
-          />
         </div>
       </div>
     </section>
