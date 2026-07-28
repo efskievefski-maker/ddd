@@ -96,11 +96,11 @@ export function StenonDetail() {
             {/* Left: Product Image */}
             <div className="relative w-full h-auto min-h-96 rounded-2xl overflow-hidden bg-white border border-stone-200 shadow-lg flex items-center justify-center">
               <Image
-                src="/images/product-stenon-farmlab.png"
+                src="/images/stenon-farmlab.png"
                 alt="Stenon FarmLab"
                 width={600}
                 height={400}
-                className="object-cover"
+                className="object-contain p-8"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
                 priority
               />
