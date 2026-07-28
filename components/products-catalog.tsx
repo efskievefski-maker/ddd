@@ -60,6 +60,7 @@ export function ProductsCatalog() {
                       product.id === 'product-8' ? '/products/veris' :
                       product.id === 'product-9' ? '/products/soil-scout' :
                       product.id === 'product-10' ? '/products/libelium-smart-agriculture-xtreme' :
+                      product.id === 'product-11' ? '/products/drill-and-drop' :
                       `/products/${product.id}`
                     }
                     className="inline-flex items-center gap-2 rounded-lg bg-emerald-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-emerald-700 active:bg-emerald-800"
