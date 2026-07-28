@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, Droplet, Zap, Gauge, Droplets, Thermometer, TrendingUp, Sprout, Cpu, BarChart3 } from 'lucide-react'
 import { SiteHeader } from '@/components/site-header'
+import { siteConfig } from '@/lib/site-config'
 
 export function AquaSpyRedesigned() {
   const [formData, setFormData] = useState({
