@@ -41,8 +41,8 @@ export function DrillAndDropDetail() {
       icon: Thermometer,
     },
     {
-      title: 'Конфигурация според культура',
-      description: 'Drill & Drop се предлага с дължина 30, 60, 90 и 120 см, което позволява избор според вида на културата и дълбочината на кореновата система.',
+      title: 'Конфигурация според културата',
+      description: 'Drill & Drop се предлага с дължина 30, 60, 90 и 120 см, което позволява избор според вида на культура и дълбочината на кореновата система.',
       icon: Gauge,
     },
   ]
@@ -126,7 +126,7 @@ export function DrillAndDropDetail() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-16 text-center">
             <h3 className="text-3xl font-bold text-stone-900 mb-4">
-              Какво ви помага да контролирате системата
+              Какво измерва
             </h3>
             <p className="text-lg text-stone-600">
               Получавате ясна картина на влагата, температурата и солеността по целия почвен профил.
